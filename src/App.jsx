@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import DefaultLayout from './layouts/DefaultLayout';
 import HomePage from "./pages/HomePage";
-import ChiSiamo from "./pages/ChiSiamo";
+import ChiSiamo from "./pages/ChiSiamo"
 import Prodotti from "./pages/Prodotti";
 
 function App() {
