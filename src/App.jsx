@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import DefaultLayout from "./layouts/DefaultLayout";
+import DefaultLayout from './layouts/DefaultLayout';
 import HomePage from "./pages/HomePage";
-import Chisiamo from "./pages/Chisiamo";
+import ChiSiamo from "./pages/ChiSiamo";
 import Prodotti from "./pages/Prodotti";
 
 function App() {
@@ -20,3 +20,5 @@ function App() {
 
   );
 }
+
+export default App
