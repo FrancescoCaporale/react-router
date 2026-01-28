@@ -5,7 +5,6 @@ export default function DefaultLayout() {
     return (
         <div>
             <Navbar />
-            <h1>Layout Principale</h1>
             <Outlet />
         </div>
     );
