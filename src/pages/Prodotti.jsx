@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
+
 export default function Prodotti() {
     const [products, setProducts] = useState([]);
 
@@ -16,19 +18,23 @@ export default function Prodotti() {
     return (
         <section>
             <h1>Prodotti</h1>
+
             <ul>
                 {products.map((product) => (
                     <li key={product.id}>
-                        <strong>{product.title}</strong><p>
-                            <img src={product.image} alt={product.title} /></p>
-                        Prezzo: {product.price} €
+                        <Link to={`/prodotti/${product.id}`}>
+                            <strong>{product.title}</strong>
+                            <p>
+                                <img
+                                    src={product.image}
+                                    alt={product.title}
+                                />
+                            </p>
+                            Prezzo: {product.price} €
+                        </Link>
                     </li>
                 ))}
             </ul>
         </section>
-
-
-
-
     );
 }
