@@ -3,6 +3,7 @@ import DefaultLayout from './layouts/DefaultLayout';
 import HomePage from "./pages/HomePage";
 import ChiSiamo from "./pages/ChiSiamo"
 import Prodotti from "./pages/Prodotti";
+import ProdottoSingolo from "./pages/ProdottoSingolo";
 
 function App() {
   return (
@@ -14,11 +15,12 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="/chi-siamo" element={<ChiSiamo />} />
           <Route path="/prodotti" element={<Prodotti />} />
+          <Route path="/prodotti/:id" element={<ProdottoSingolo />} />
         </Route>
       </Routes>
     </BrowserRouter>
 
-  ); -
+  );
 }
 
 export default App
